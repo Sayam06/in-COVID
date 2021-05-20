@@ -1,53 +1,42 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
+require('dotenv').config()
 
 const app = express()
 app.use(bodyParser.urlencoded({ extended: true }))
 
 // GOVT. HOSPITAL CONNECTION
 
-conn1 = mongoose.createConnection(
-	'mongodb+srv://kaussy:Kaustav2002@@cluster0.lzw2g.mongodb.net/DB1',
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false
-  }
-)
+conn1 = mongoose.createConnection(process.env.HOSPITAL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false
+})
 
 // PVT. HOSPITAL CONNECTION
 
-conn2 = mongoose.createConnection(
-	'mongodb+srv://admin-sayam:incovid@cluster0.anagw.mongodb.net/pvtHospital',
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false
-  }
-)
+conn2 = mongoose.createConnection(process.env.PRIVATE, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false
+})
 
 // SERVICE CONNECTION
 
-conn3 = mongoose.createConnection(
-	'mongodb+srv://admin-sayam:incovid@cluster0.anagw.mongodb.net/in-COVID',
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false
-  }
-)
+conn3 = mongoose.createConnection(process.env.SERVICE, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false
+})
 
 // COMPLAINTS CONNECTION
 
-conn4 = mongoose.createConnection(
-	'mongodb+srv://admin-sayam:incovid@cluster0.anagw.mongodb.net/complaint',
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false
-  }
-)
+conn4 = mongoose.createConnection(process.env.COMPLAINT, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false
+})
 
 const dataSchema = new mongoose.Schema({
   District: String,
