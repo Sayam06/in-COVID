@@ -2,6 +2,12 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "animated_text_kit",
+      "rootUri": "file:///D:/FLUTTER/flutter/.pub-cache/hosted/pub.dartlang.org/animated_text_kit-4.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "archive",
       "rootUri": "file:///D:/FLUTTER/flutter/.pub-cache/hosted/pub.dartlang.org/archive-3.1.2",
       "packageUri": "lib/",
@@ -15,7 +21,7 @@
     },
     {
       "name": "async",
-      "rootUri": "file:///D:/FLUTTER/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.5.0",
+      "rootUri": "file:///D:/FLUTTER/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.6.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -92,6 +98,42 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "firebase_core",
+      "rootUri": "file:///D:/FLUTTER/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "firebase_core_platform_interface",
+      "rootUri": "file:///D:/FLUTTER/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_platform_interface-4.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "firebase_core_web",
+      "rootUri": "file:///D:/FLUTTER/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "firebase_messaging",
+      "rootUri": "file:///D:/FLUTTER/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_messaging-10.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "firebase_messaging_platform_interface",
+      "rootUri": "file:///D:/FLUTTER/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_messaging_platform_interface-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "firebase_messaging_web",
+      "rootUri": "file:///D:/FLUTTER/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_messaging_web-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter",
       "rootUri": "file:///D:/FLUTTER/flutter/packages/flutter",
       "packageUri": "lib/",
@@ -106,12 +148,6 @@
     {
       "name": "flutter_cache_manager",
       "rootUri": "file:///D:/FLUTTER/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_cache_manager-3.0.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "flutter_inappwebview",
-      "rootUri": "file:///D:/FLUTTER/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_inappwebview-5.3.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -273,7 +309,7 @@
     },
     {
       "name": "source_span",
-      "rootUri": "file:///D:/FLUTTER/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.0",
+      "rootUri": "file:///D:/FLUTTER/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -321,7 +357,7 @@
     },
     {
       "name": "test_api",
-      "rootUri": "file:///D:/FLUTTER/flutter/.pub-cache/hosted/pub.dartlang.org/test_api-0.2.19",
+      "rootUri": "file:///D:/FLUTTER/flutter/.pub-cache/hosted/pub.dartlang.org/test_api-0.3.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -398,19 +434,13 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "youtube_player_flutter",
-      "rootUri": "file:///D:/FLUTTER/flutter/.pub-cache/hosted/pub.dartlang.org/youtube_player_flutter-8.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "in_covid",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-05-12T13:26:58.687859Z",
+  "generated": "2021-06-18T07:36:23.353021Z",
   "generator": "pub",
-  "generatorVersion": "2.12.2"
+  "generatorVersion": "2.13.0"
 }

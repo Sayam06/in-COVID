@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "434061547357",
+    "project_id": "in-covid-e0229",
+    "storage_bucket": "in-covid-e0229.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434061547357:android:050cfbe2fe3381ed13fab4",
+        "android_client_info": {
+          "package_name": "com.teamAccess.in_covid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434061547357-q4rfpb14i3mog790ee2j7h2j30po6kr8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCROTB57auj8t1lMMoqPS9wDjKJ9psYWVc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434061547357-q4rfpb14i3mog790ee2j7h2j30po6kr8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

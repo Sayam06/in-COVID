@@ -361,6 +361,96 @@ class OurTeam extends StatelessWidget {
                     ],
                   ),
                 ),
+                Container(
+                  height: 0.54 * c,
+                  width: (c - (0.322 * c)),
+                  margin: EdgeInsets.only(
+                      left: 0.162 * c,
+                      right: 0.162 * c,
+                      top: 0.1 * c,
+                      bottom: 0.01 * c),
+                  decoration: BoxDecoration(
+                      borderRadius:
+                          BorderRadius.all(Radius.circular(0.0405 * c)),
+                      border: Border.all(
+                          color: Color.fromRGBO(255, 130, 130, 1),
+                          width: 0.0108 * c)),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                          margin: EdgeInsets.only(bottom: 0.081 * c),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(0.027 * c),
+                                topRight: Radius.circular(0.027 * c),
+                                bottomLeft: Radius.circular(0.0405 * c),
+                                bottomRight: Radius.circular(0.0405 * c)),
+                            child: Image.asset(
+                              "assets/images/LifeCode.jpeg",
+                              fit: BoxFit.fitHeight,
+                            ),
+                          )),
+                      Container(
+                        margin: EdgeInsets.only(
+                            bottom: 0.0405 * c,
+                            left: 0.027 * c,
+                            right: 0.027 * c),
+                        child: Text(
+                          "LIFE CODE",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 0.054 * c),
+                          textAlign: TextAlign.left,
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          margin: EdgeInsets.symmetric(horizontal: 0.027 * c),
+                          child: SingleChildScrollView(
+                            physics: BouncingScrollPhysics(),
+                            child: RichText(
+                              text: new TextSpan(
+                                // Note: Styles for TextSpans must be explicitly defined.
+                                // Child text spans will inherit styles from parent
+                                style: new TextStyle(
+                                  fontSize: 0.0405 * c,
+                                  color: Colors.black,
+                                ),
+                                children: <TextSpan>[
+                                  new TextSpan(
+                                      text: 'Volunteer',
+                                      style: TextStyle(
+                                        fontFamily: "Montserrat",
+                                      )),
+                                  new TextSpan(
+                                      text: '\nin-COVID',
+                                      style: new TextStyle(
+                                          fontFamily: "Montserrat",
+                                          fontWeight: FontWeight.bold)),
+                                  new TextSpan(
+                                      text:
+                                          "\n\nLifeCode is a small youth initiative founded by Sriya De, where we join hands to help those in need. It includes more than 100 members working in different departments like Technical, PR, Creative, Executive, Treasury, Fieldwork, General Convenor, Food, Deliverables, Beds and Oxygen. LifeCode aims to help and provide care to patients especially those affected by the corona virus. Team LifeCode is trying its best to spread awareness and useful information to help those in need during this time of global crisis.",
+                                      style: new TextStyle(
+                                        fontFamily: "Montserrat",
+                                      ))
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () => customLaunch(
+                            "https://www.instagram.com/lifecode_covid19/"),
+                        child: Container(
+                          margin: EdgeInsets.only(bottom: 0.054 * c, top: 10),
+                          height: 0.0675 * c,
+                          child: Image.asset("assets/images/instagram.png"),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ],
             ),
           ),

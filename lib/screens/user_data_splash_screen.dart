@@ -6,6 +6,7 @@ import 'dart:convert';
 
 import 'package:in_covid/models/safety_quotes.dart';
 import 'package:in_covid/screens/user_data_screen_list.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class UserDataSplashScreen extends StatefulWidget {
   static const routeName = "/user-data-splash-screen";
@@ -57,17 +58,10 @@ class _UserDataSplashScreenState extends State<UserDataSplashScreen> {
               child:
                   Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                 Container(
-                  child: Flexible(
-                    child: Text(
-                      QUOTES[n],
-                      style: TextStyle(
-                        fontFamily: "Montserrat",
-                        fontWeight: FontWeight.bold,
-                        fontSize: 0.07 * MediaQuery.of(context).size.width,
-                      ),
-                      overflow: TextOverflow.fade,
-                      textAlign: TextAlign.center,
-                    ),
+                  margin: EdgeInsets.only(bottom: 0.135 * c),
+                  child: SpinKitFadingCube(
+                    color: Color.fromRGBO(255, 130, 130, 1),
+                    size: 0.135 * c,
                   ),
                 )
               ]),

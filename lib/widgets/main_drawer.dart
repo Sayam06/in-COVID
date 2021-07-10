@@ -7,6 +7,7 @@ import 'package:in_covid/screens/how_to_use_screen.dart';
 
 import 'package:in_covid/screens/our_team_screen.dart';
 import 'package:in_covid/screens/twitter_search_screen.dart';
+import 'package:in_covid/screens/vaccine_certificate_details_mobile_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MainDrawer extends StatelessWidget {
@@ -69,6 +70,10 @@ class MainDrawer extends StatelessWidget {
             buildListTile("THE TEAM", () {
               Navigator.of(context).pushNamed(OurTeam.routeName);
             }, c),
+            buildListTile("VACCINATION CERTIFICATE", () {
+              Navigator.of(context)
+                  .pushNamed(VaccineCertificateDetailsMobileScreen.routeName);
+            }, c),
             Container(
               padding: EdgeInsets.only(
                 bottom: 0.09 * c,
@@ -102,7 +107,7 @@ class MainDrawer extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(left: 0.055 * c),
+              margin: EdgeInsets.only(left: 0.055 * c, bottom: 0.04 * c),
               padding: EdgeInsets.only(top: 0.0675 * c),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,

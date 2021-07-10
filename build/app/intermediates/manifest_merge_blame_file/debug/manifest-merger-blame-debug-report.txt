@@ -1,11 +1,11 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.teamAccess.incovid"
-4    android:versionCode="1"
-5    android:versionName="1.0.0" >
+3    package="com.teamAccess.in_covid"
+4    android:versionCode="2"
+5    android:versionName="1.0.1" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="20"
+8        android:minSdkVersion="18"
 9        android:targetSdkVersion="30" />
 10    <!--
 11         Flutter needs it to communicate with the running application
@@ -14,125 +14,272 @@
 14    <uses-permission android:name="android.permission.INTERNET" />
 14-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:45:5-66
 14-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:45:22-64
-15
-16    <queries>
-16-->[:flutter_inappwebview] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-11:15
-17        <intent>
-17-->[:flutter_inappwebview] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-10:18
-18            <action android:name="android.support.customtabs.action.CustomTabsService" />
-18-->[:flutter_inappwebview] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-90
-18-->[:flutter_inappwebview] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:9:21-87
-19        </intent>
-20    </queries>
-21
-22    <application
-22-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:4:4-44:19
-23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-23-->[androidx.core:core:1.3.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\a69d6fcd21e670073cd9cab171299398\core-1.3.0\AndroidManifest.xml:24:18-86
-24        android:debuggable="true"
-25        android:icon="@mipmap/ic_launcher"
-25-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:7:9-43
-26        android:label="in-COVID"
-26-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:6:9-33
-27        android:usesCleartextTraffic="true" >
-27-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:5:4-39
-28        <activity
-28-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:8:9-38:20
-29            android:name="com.example.in_covid.MainActivity"
-29-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:10:13-41
-30            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-30-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:13:13-163
-31            android:hardwareAccelerated="true"
-31-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:14:13-47
-32            android:launchMode="singleTop"
-32-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:11:13-43
-33            android:theme="@style/LaunchTheme"
-33-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:12:13-47
-34            android:windowSoftInputMode="adjustResize" >
-34-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:15:13-55
-35
-36            <!--
-37                 Specifies an Android theme to apply to this Activity as soon as
-38                 the Android process has started. This theme is visible to the user
-39                 while the Flutter UI initializes. After that, this theme continues
-40                 to determine the Window background behind the Flutter UI.
-41            -->
-42            <meta-data
-42-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:21:13-24:17
-43                android:name="io.flutter.embedding.android.NormalTheme"
-43-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:22:15-70
-44                android:resource="@style/NormalTheme" />
-44-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:23:15-52
-45            <!--
-46                 Displays an Android View that continues showing the launch screen
-47                 Drawable until Flutter paints its first frame, then this splash
-48                 screen fades out. A splash screen is useful to avoid any visual
-49                 gap between the end of Android's launch screen and the painting of
-50                 Flutter's first frame.
-51            -->
-52            <meta-data
-52-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:30:13-33:17
-53                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-53-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:31:15-79
-54                android:resource="@drawable/launch_background" />
-54-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:32:15-61
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-68
+15-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-65
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+16-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-79
+16-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-76
+17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+17-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\1c075310296ee9585f35188ad9e1b8a0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:5-82
+17-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\1c075310296ee9585f35188ad9e1b8a0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:22-79
+18
+19    <application
+19-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:4:4-44:19
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.1.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\f4a15a5606c9a028857d8a3e89eefa0f\core-1.1.0\AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+22-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:7:9-43
+23        android:label="in-COVID"
+23-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:6:9-33
+24        android:usesCleartextTraffic="true" >
+24-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:5:4-39
+25        <activity
+25-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:8:9-38:20
+26            android:name="com.example.in_covid.MainActivity"
+26-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:10:13-41
+27            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+27-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:13:13-163
+28            android:hardwareAccelerated="true"
+28-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:14:13-47
+29            android:launchMode="singleTop"
+29-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:11:13-43
+30            android:theme="@style/LaunchTheme"
+30-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:12:13-47
+31            android:windowSoftInputMode="adjustResize" >
+31-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:15:13-55
+32
+33            <!--
+34                 Specifies an Android theme to apply to this Activity as soon as
+35                 the Android process has started. This theme is visible to the user
+36                 while the Flutter UI initializes. After that, this theme continues
+37                 to determine the Window background behind the Flutter UI.
+38            -->
+39            <meta-data
+39-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:21:13-24:17
+40                android:name="io.flutter.embedding.android.NormalTheme"
+40-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:22:15-70
+41                android:resource="@style/NormalTheme" />
+41-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:23:15-52
+42            <!--
+43                 Displays an Android View that continues showing the launch screen
+44                 Drawable until Flutter paints its first frame, then this splash
+45                 screen fades out. A splash screen is useful to avoid any visual
+46                 gap between the end of Android's launch screen and the painting of
+47                 Flutter's first frame.
+48            -->
+49            <meta-data
+49-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:30:13-33:17
+50                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+50-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:31:15-79
+51                android:resource="@drawable/launch_background" />
+51-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:32:15-61
+52
+53            <intent-filter>
+53-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:34:13-37:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:35:17-68
+54-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:35:25-66
 55
-56            <intent-filter>
-56-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:34:13-37:29
-57                <action android:name="android.intent.action.MAIN" />
-57-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:35:17-68
-57-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:35:25-66
-58
-59                <category android:name="android.intent.category.LAUNCHER" />
-59-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:36:17-76
-59-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:36:27-74
-60            </intent-filter>
-61        </activity>
-62        <!--
-63             Don't delete the meta-data below.
-64             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-65        -->
-66        <meta-data
-66-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:41:9-43:33
-67            android:name="flutterEmbedding"
-67-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:42:13-44
-68            android:value="2" />
-68-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:43:13-30
-69
-70        <activity
-70-->[:flutter_inappwebview] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-17:47
-71            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
-71-->[:flutter_inappwebview] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-104
-72            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
-72-->[:flutter_inappwebview] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-137
-73            android:theme="@style/AppTheme" />
-73-->[:flutter_inappwebview] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-44
-74        <activity
-74-->[:flutter_inappwebview] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-20:55
-75            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
-75-->[:flutter_inappwebview] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-112
-76            android:theme="@style/ThemeTransparent" />
-76-->[:flutter_inappwebview] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-52
-77
-78        <receiver android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver" />
-78-->[:flutter_inappwebview] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:22:9-120
-78-->[:flutter_inappwebview] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:22:19-117
-79
-80        <meta-data
-80-->[:flutter_inappwebview] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:24:9-26:36
-81            android:name="io.flutter.embedded_views_preview"
-81-->[:flutter_inappwebview] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-61
-82            android:value="true" />
-82-->[:flutter_inappwebview] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-33
-83
-84        <activity
-84-->[:url_launcher] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
-85            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-85-->[:url_launcher] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
-86            android:exported="false"
-86-->[:url_launcher] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
-87            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-87-->[:url_launcher] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
-88    </application>
-89
-90</manifest>
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:36:17-76
+56-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:36:27-74
+57            </intent-filter>
+58        </activity>
+59        <!--
+60             Don't delete the meta-data below.
+61             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+62        -->
+63        <meta-data
+63-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:41:9-43:33
+64            android:name="flutterEmbedding"
+64-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:42:13-44
+65            android:value="2" />
+65-->D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\android\app\src\main\AndroidManifest.xml:43:13-30
+66
+67        <service
+67-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-15:72
+68            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+68-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-107
+69            android:exported="false"
+69-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+70            android:permission="android.permission.BIND_JOB_SERVICE" />
+70-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-69
+71        <service
+71-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-22:19
+72            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+72-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-97
+73            android:exported="false" >
+73-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+74            <intent-filter>
+74-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-21:29
+75                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+75-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:17-78
+75-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:25-75
+76            </intent-filter>
+77        </service>
+78
+79        <receiver
+79-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:24:9-31:20
+80            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+80-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-98
+81            android:exported="true"
+81-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-36
+82            android:permission="com.google.android.c2dm.permission.SEND" >
+82-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-73
+83            <intent-filter>
+83-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-30:29
+84                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+84-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:17-81
+84-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:25-78
+85            </intent-filter>
+86        </receiver>
+87
+88        <service
+88-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:33:9-37:19
+89            android:name="com.google.firebase.components.ComponentDiscoveryService"
+89-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:33:18-89
+90            android:directBootAware="true"
+90-->[com.google.firebase:firebase-common:20.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+91            android:exported="false" >
+91-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\1c075310296ee9585f35188ad9e1b8a0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:51:13-37
+92            <meta-data
+92-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:34:13-36:85
+93                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+93-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:35:17-128
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:36:17-82
+95            <meta-data
+95-->[:firebase_core] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+96                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+96-->[:firebase_core] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[:firebase_core] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\1c075310296ee9585f35188ad9e1b8a0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:52:13-54:85
+99                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+99-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\1c075310296ee9585f35188ad9e1b8a0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:53:17-119
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\1c075310296ee9585f35188ad9e1b8a0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:54:17-82
+101            <meta-data
+101-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\2143f63b0fbb6459807ac91f4bf988f5\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+102                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+102-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\2143f63b0fbb6459807ac91f4bf988f5\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\2143f63b0fbb6459807ac91f4bf988f5\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+104            <meta-data
+104-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+105                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+105-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+107        </service>
+108
+109        <provider
+109-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:39:9-43:38
+110            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+110-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-102
+111            android:authorities="com.teamAccess.in_covid.flutterfirebasemessaginginitprovider"
+111-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-88
+112            android:exported="false"
+112-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:42:13-37
+113            android:initOrder="99" />
+113-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:43:13-35
+114
+115        <activity
+115-->[:url_launcher] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+116            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+116-->[:url_launcher] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+117            android:exported="false"
+117-->[:url_launcher] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+118            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+118-->[:url_launcher] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+119
+120        <receiver
+120-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\1c075310296ee9585f35188ad9e1b8a0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:28:9-35:20
+121            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+121-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\1c075310296ee9585f35188ad9e1b8a0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:29:13-78
+122            android:exported="true"
+122-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\1c075310296ee9585f35188ad9e1b8a0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:30:13-36
+123            android:permission="com.google.android.c2dm.permission.SEND" >
+123-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\1c075310296ee9585f35188ad9e1b8a0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:31:13-73
+124            <intent-filter>
+124-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-30:29
+125                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+125-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:17-81
+125-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:25-78
+126            </intent-filter>
+127        </receiver>
+128        <!--
+129             FirebaseMessagingService performs security checks at runtime,
+130             but set to not exported to explicitly avoid allowing another app to call it.
+131        -->
+132        <service
+132-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\1c075310296ee9585f35188ad9e1b8a0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:41:9-48:19
+133            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+133-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\1c075310296ee9585f35188ad9e1b8a0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:42:13-82
+134            android:directBootAware="true"
+134-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\1c075310296ee9585f35188ad9e1b8a0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:43:13-43
+135            android:exported="false" >
+135-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\1c075310296ee9585f35188ad9e1b8a0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:44:13-37
+136            <intent-filter android:priority="-500" >
+136-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-21:29
+137                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+137-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:17-78
+137-->[:firebase_messaging] D:\PROJECTS\in-COVID\app\in-COVID\in-COVID\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:25-75
+138            </intent-filter>
+139        </service>
+140
+141        <provider
+141-->[com.google.firebase:firebase-common:20.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+142            android:name="com.google.firebase.provider.FirebaseInitProvider"
+142-->[com.google.firebase:firebase-common:20.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+143            android:authorities="com.teamAccess.in_covid.firebaseinitprovider"
+143-->[com.google.firebase:firebase-common:20.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+144            android:directBootAware="true"
+144-->[com.google.firebase:firebase-common:20.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+145            android:exported="false"
+145-->[com.google.firebase:firebase-common:20.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+146            android:initOrder="100" />
+146-->[com.google.firebase:firebase-common:20.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+147
+148        <meta-data
+148-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\9d3ebf861ced2bc6fde51a467c749fe4\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+149            android:name="com.google.android.gms.version"
+149-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\9d3ebf861ced2bc6fde51a467c749fe4\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+150            android:value="@integer/google_play_services_version" />
+150-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\9d3ebf861ced2bc6fde51a467c749fe4\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+151
+152        <service
+152-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+153            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+153-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+154            android:exported="false" >
+154-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+155            <meta-data
+155-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+156                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+156-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+157                android:value="cct" />
+157-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+158        </service>
+159        <service
+159-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+160            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+160-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+161            android:exported="false"
+161-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+162            android:permission="android.permission.BIND_JOB_SERVICE" >
+162-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+163        </service>
+164
+165        <receiver
+165-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+166            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+166-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
+167            android:exported="false" />
+167-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\sayam\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+168    </application>
+169
+170</manifest>

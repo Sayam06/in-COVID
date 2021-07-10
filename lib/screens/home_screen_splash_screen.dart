@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:in_covid/models/safety_quotes.dart';
 import 'package:in_covid/screens/services_screen.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'dart:math';
 
 import 'dart:async';
@@ -20,7 +21,7 @@ class _HomeScreenSplashScreenState extends State<HomeScreenSplashScreen> {
   Future<String> getData() async {
     http.Response response = await http.get(
         Uri.parse(
-            "https://script.google.com/macros/s/AKfycbwXLJTiCAjSPDx-Szp1L6pKUkO-m7ofhaQZT5sHPsua2Lfe8fzVLXFh1SIdGaEf5Ompnw/exec"),
+            "https://script.google.com/macros/s/AKfycbw3AbtqJuQZTDWbFwY6rwlcgsTLPRWIrhqw4QYuquIV8ut93XoKIalaGbMa2xJc5B-a/exec"),
         headers: {"Accept": "application/json"});
 
     data = json.decode(response.body);
@@ -60,45 +61,44 @@ class _HomeScreenSplashScreenState extends State<HomeScreenSplashScreen> {
     var n = random.nextInt(QUOTES.length);
     var c = MediaQuery.of(context).size.width;
 
-    return Container(
-      child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          elevation: 0,
-          automaticallyImplyLeading: false,
-        ),
+    return Scaffold(
+      appBar: AppBar(
         backgroundColor: Colors.white,
-        body: Container(
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Container(
-                  margin: EdgeInsets.only(
-                      left: 0.057 * c, right: 0.057 * c, bottom: 0.053 * c),
-                  child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          // padding: EdgeInsets.only(bottom: 20),
-                          child: Flexible(
-                            child: Text(
-                              QUOTES[n],
-                              style: TextStyle(
-                                fontFamily: "Montserrat",
-                                fontWeight: FontWeight.bold,
-                                fontSize:
-                                    0.06 * MediaQuery.of(context).size.width,
-                              ),
-                              overflow: TextOverflow.fade,
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                        )
+        elevation: 0,
+        automaticallyImplyLeading: false,
+      ),
+      backgroundColor: Colors.white,
+      body: Center(
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                  margin: EdgeInsets.only(bottom: 0.135 * c),
+                  height: 0.54 * c,
+                  child: Image.asset("assets/images/loading.png")),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(left: 0.0675 * c),
+                    child: Text("LOADING"),
+                  ),
+                  SizedBox(
+                    width: 0.0675 * c,
+                    child: DefaultTextStyle(
+                      style: const TextStyle(fontSize: 20, color: Colors.black),
+                      child: AnimatedTextKit(animatedTexts: [
+                        TyperAnimatedText(
+                          '...',
+                          speed: const Duration(milliseconds: 800),
+                        ),
                       ]),
-                ),
-              ]),
-        ),
+                    ),
+                  ),
+                ],
+              )
+            ]),
       ),
     );
   }

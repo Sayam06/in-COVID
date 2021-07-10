@@ -4,7 +4,7 @@
     "type": "COMPATIBLE_SCREEN_MANIFEST",
     "kind": "Directory"
   },
-  "applicationId": "com.teamAccess.incovid",
+  "applicationId": "com.teamAccess.in_covid",
   "variantName": "release",
   "elements": []
 }

@@ -36,14 +36,14 @@ class _HospitalDataSplashScreenState extends State<HospitalDataSplashScreen> {
                 color: Color.fromRGBO(255, 130, 130, 1),
                 size: 0.135 * c,
               ),
-              Container(
-                  margin: EdgeInsets.only(left: 20, right: 20, top: 80),
-                  child: Text(
-                    "PLEASE WAIT WHILE WE FETCH YOUR DATA.",
-                    style: TextStyle(
-                        fontSize: 0.06 * c, fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.center,
-                  ))
+              // Container(
+              //     margin: EdgeInsets.only(left: 20, right: 20, top: 80),
+              //     child: Text(
+              //       "PLEASE WAIT WHILE WE FETCH YOUR DATA.",
+              //       style: TextStyle(
+              //           fontSize: 0.06 * c, fontWeight: FontWeight.bold),
+              //       textAlign: TextAlign.center,
+              //     ))
             ]),
       ),
     );

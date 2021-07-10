@@ -226,7 +226,7 @@ class _AddYourServiceScreenState extends State<AddYourServiceScreen> {
                     : SizedBox(
                         height: 0.0027 * c,
                       ),
-                serviceName == "BLOOD / PLASMA"
+                serviceName == "BLOOD" || serviceName == "PLASMA"
                     ? Container(
                         margin: EdgeInsets.only(bottom: 0.0135 * c),
                         child: Text("SELECT YOUR BLOOD GROUP."),
@@ -234,7 +234,7 @@ class _AddYourServiceScreenState extends State<AddYourServiceScreen> {
                     : SizedBox(
                         height: 0.0027 * c,
                       ),
-                serviceName == "BLOOD / PLASMA"
+                serviceName == "BLOOD" || serviceName == "PLASMA"
                     ? Container(
                         padding: EdgeInsets.only(
                           left: 0.027 * c,
@@ -279,7 +279,7 @@ class _AddYourServiceScreenState extends State<AddYourServiceScreen> {
                     : SizedBox(
                         height: 1,
                       ),
-                serviceName == "BLOOD / PLASMA"
+                serviceName == "BLOOD" || serviceName == "PLASMA"
                     ? Container(
                         padding:
                             EdgeInsets.only(left: 0.027 * c, right: 0.027 * c),

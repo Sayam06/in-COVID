@@ -22,6 +22,8 @@ import 'package:in_covid/screens/twitter_search_screen.dart';
 import 'package:in_covid/screens/user_data_details_screen.dart';
 import 'package:in_covid/screens/user_data_screen_list.dart';
 import 'package:in_covid/screens/user_data_splash_screen.dart';
+import 'package:in_covid/screens/vaccine_certificate_details_mobile_screen.dart';
+import 'package:in_covid/screens/version_error_screen.dart';
 
 import './screens/home_screen.dart';
 
@@ -66,6 +68,9 @@ class MyApp extends StatelessWidget {
         IntroScreens.routeName: (ctx) => IntroScreens(),
         AddHospital.routeName: (ctx) => AddHospital(),
         TwitterSearchScreen.routeName: (ctx) => TwitterSearchScreen(),
+        VersionError.routeName: (ctx) => VersionError(),
+        VaccineCertificateDetailsMobileScreen.routeName: (ctx) =>
+            VaccineCertificateDetailsMobileScreen(),
         // IntroScreen.routeName: (ctx) => IntroScreen(),
       },
     );
