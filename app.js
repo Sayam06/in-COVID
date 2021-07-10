@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // GOVT. HOSPITAL CONNECTION
 
 conn1 = mongoose.createConnection(
-	'mongodb+srv://kaussy:Kaustav2002@@cluster0.lzw2g.mongodb.net/DB1',
+	{key1},
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -19,7 +19,7 @@ conn1 = mongoose.createConnection(
 // PVT. HOSPITAL CONNECTION
 
 conn2 = mongoose.createConnection(
-	'mongodb+srv://admin-sayam:incovid@cluster0.anagw.mongodb.net/pvtHospital',
+	{key2},
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -30,7 +30,7 @@ conn2 = mongoose.createConnection(
 // SERVICE CONNECTION
 
 conn3 = mongoose.createConnection(
-	'mongodb+srv://admin-sayam:incovid@cluster0.anagw.mongodb.net/in-COVID',
+	{key3},
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -41,7 +41,7 @@ conn3 = mongoose.createConnection(
 // COMPLAINTS CONNECTION
 
 conn4 = mongoose.createConnection(
-	'mongodb+srv://admin-sayam:incovid@cluster0.anagw.mongodb.net/complaint',
+	{key4},
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
