@@ -9,4 +9,4 @@ Something as normal as a cough has been commanding our attention for the past ye
 Thus in-COVID was created that helps one to reach out for resources like hospital beds, oxygen cylinders, medicines, teleconsultation, and some more essentials for COVID-19 patients.
 
 
-This repository contains the flutter files for in-COVID app.
+This repository contains the **flutter files** for in-COVID app.
