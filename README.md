@@ -15,7 +15,7 @@ No advertisements. We understand the purpose and mindset of those using our app,
 
 Our aim and yours are the same, we wish to combat and conquer the virus. The fight against COVID-19 is on, but the fight never is or was against humanity.
 
-Hence, we urge the users and the general public to help their fellow citizens as much as they can."
+Hence, we urge the users and the general public to help their fellow citizens as much as they can.
 
 ![incovid](https://user-images.githubusercontent.com/73817603/125175737-a7942480-e1eb-11eb-8b5b-12c09187a0e5.jpg)
 
