@@ -1,4 +1,4 @@
-# in-COVID-API
+# in-COVID
 <br>
 <p align = "center">
 <img src = "/assets/images/logo.png" width = 300 align = "centre">
